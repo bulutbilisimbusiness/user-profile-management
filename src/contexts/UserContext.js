@@ -6,10 +6,8 @@ import {
 	deleteUser,
 } from "../services/api";
 
-// Kullanıcı context'ini oluştur
 export const UserContext = createContext();
 
-// Kullanıcı sağlayıcı bileşeni
 export const UserProvider = ({ children }) => {
 	const [users, setUsers] = useState([]);
 	const [loading, setLoading] = useState(true);
