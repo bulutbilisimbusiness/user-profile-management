@@ -1,0 +1,142 @@
+/* Genel stiller */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #e4a10fe7;
+}
+
+.App {
+	text-align: center;
+}
+
+.header {
+	background: #282c34;
+	padding: 10px 0;
+	color: white;
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.header .title {
+	margin: 0;
+}
+
+.header .link {
+	color: white;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.footer {
+	background: #282c34;
+	padding: 10px 0;
+	color: white;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.footer .text {
+	margin: 0;
+}
+
+/* Responsive tablo stilleri */
+.table-responsive {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	background-color: transparent;
+}
+
+.table th,
+.table td {
+	padding: 0.75rem;
+	vertical-align: top;
+	border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+	border-top: 2px solid #dee2e6;
+}
+
+.table .table {
+	background-color: #fff;
+}
+
+.table-hover tbody tr:hover {
+	background-color: rgba(0, 0, 0, 0.075);
+}
+
+@media (max-width: 767.98px) {
+	.table-responsive {
+		border: 0;
+	}
+
+	.table-responsive > .table {
+		margin-bottom: 0;
+	}
+
+	.table-responsive > .table > thead,
+	.table-responsive > .table > tbody,
+	.table-responsive > .table > tfoot,
+	.table-responsive > .table > thead > tr,
+	.table-responsive > .table > tbody > tr,
+	.table-responsive > .table > tfoot > tr,
+	.table-responsive > .table > thead > tr > th,
+	.table-responsive > .table > tbody > tr > th,
+	.table-responsive > .table > tfoot > tr > th,
+	.table-responsive > .table > thead > tr > td,
+	.table-responsive > .table > tbody > tr > td,
+	.table-responsive > .table > tfoot > tr > td {
+		display: block;
+		border-top: none;
+	}
+
+	.table-responsive > .table > thead > tr:first-child > th,
+	.table-responsive > .table > tbody > tr:first-child > th,
+	.table-responsive > .table > tfoot > tr:first-child > th,
+	.table-responsive > .table > thead > tr:first-child > td,
+	.table-responsive > .table > tbody > tr:first-child > td,
+	.table-responsive > .table > tfoot > tr:first-child > td {
+		border-top: 0;
+	}
+
+	.table-responsive > .table > tbody > tr > td:before,
+	.table-responsive > .table > tbody > tr > th:before,
+	.table-responsive > .table > thead > tr > th:before,
+	.table-responsive > .table > tfoot > tr > th:before,
+	.table-responsive > .table > tfoot > tr > td:before,
+	.table-responsive > .table > thead > tr > td:before {
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
