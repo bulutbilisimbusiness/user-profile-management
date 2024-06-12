@@ -6,7 +6,7 @@ import { UserContext } from "../contexts/UserContext";
 
 const ProfileList = () => {
 	const { users, loading, error, deleteUserById } = useContext(UserContext);
-	const currentUserRole = "Administrator"; // Mevcut oturum açmış kullanıcıya göre dinamik olarak ayarlanmalıdır
+	const currentUserRole = "Administrator";
 
 	const handleDelete = (id) => {
 		if (window.confirm("Do you want to remove?")) {
@@ -41,8 +41,6 @@ const ProfileList = () => {
 
 	return (
 		<Container className="mt-4 mb-5">
-			{" "}
-			{/* mb-5 class is added to create space at the bottom */}
 			<Card>
 				<Card.Header>
 					<Row className="justify-content-between">
