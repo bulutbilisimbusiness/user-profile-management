@@ -14,7 +14,7 @@ const ProfileDetail = () => {
 	});
 	const [error, setError] = useState(null);
 
-	const currentUserRole = "Administrator"; // Bu değer mevcut oturum açmış kullanıcıya göre dinamik olarak ayarlanmalıdır
+	const currentUserRole = "Administrator";
 
 	useEffect(() => {
 		const foundUser = users.find((u) => u.id.toString() === id);
